@@ -1,16 +1,67 @@
-# task
+# Expense Tracker
 
-A new Flutter project.
+A **Personal Expense Tracker** mobile application built with **Flutter** using **GetX** for state management, **SQLite** for data persistence, and local notifications for daily reminders.
 
-## Getting Started
+## Features
+- Add, Edit, and Delete Expenses
+- Categorize expenses
+- View expense summaries
+- Dark and Light mode support
+- Local Notifications for daily expense reminders
 
-This project is a starting point for a Flutter application.
+## Installation & Setup
 
-A few resources to get you started if this is your first Flutter project:
+### **1. Clone the Repository**
+```sh
+git clone https://github.com/AamilSilawat/expense-tracker.git
+cd expense-tracker
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### **2. Install Dependencies**
+```sh
+flutter pub get
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### **3. Run the App**
+```sh
+flutter run
+```
+
+## **Project Structure**
+```
+lib/
+│── main.dart                 # Entry point of the app
+│
+├── core/                     # Common utilities, themes, database helper
+│
+├── data/                     # SQLite database integration and repositories
+│
+├── models/                   # Expense model
+│
+├── controllers/              # GetX controllers
+│
+├── screens/                  # UI screens (Home, Add Expense, Edit Expense)
+│
+├── utils/                    # Helper functions and constants
+```
+
+## **Database Setup**
+The app uses **SQLite** to store expense data. The database is initialized when the app starts.
+
+## **Testing**
+To run unit tests:
+```sh
+flutter test
+```
+
+## **Build Release APK**
+```sh
+flutter build apk --release
+```
+
+## **Contributing**
+Pull requests are welcome. Please open an issue first to discuss any changes.
+
+## **License**
+This project is licensed under the MIT License.
+
